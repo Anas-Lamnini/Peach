@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Peech</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="creat_new_account">Creat New Account</string>
+    <string name="tutoriel">Tutoriel</string>
+    <string name="login">Login</string>
+    <string name="button">Button</string>
+</resources>
