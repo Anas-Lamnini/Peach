@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="#F8F2F2"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="LOGIN"
+        android:inputType="textPersonName"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/Password1"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="#F8F2F2"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textSize="16dp"
+        tools:ignore="UnknownId"
+        android:autofillHints="" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Validbut"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        app:cardBackgroundColor="#99790E0E"
+        app:cardCornerRadius="25dp"
+        tools:ignore="UnknownId">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="LOGIN"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:fontFamily="serif" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="106dp"
+        android:text="Register Here"
+        android:textAllCaps="true"
+        android:textColor="#F3F0F0"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/Forgpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginBottom="44dp"
+        android:text="Forgotten Password"
+        android:textAllCaps="true"
+        android:textColor="#F3F0F0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+</RelativeLayout>

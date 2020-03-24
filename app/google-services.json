@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "53754790833",
+    "firebase_url": "https://peech-cfc7e.firebaseio.com",
+    "project_id": "peech-cfc7e",
+    "storage_bucket": "peech-cfc7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53754790833:android:df06c9eaec2006e09b3390",
+        "android_client_info": {
+          "package_name": "com.example.peech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53754790833-vqvp6t8e18e01do60gjq8f9qhvgvvg43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peech",
+            "certificate_hash": "e7eb296683886de04b039e3076a4e630304739bb"
+          }
+        },
+        {
+          "client_id": "53754790833-qu45ckucglpe8k8to62hofb8d23no1q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNMr2U0J85ryt3B5yXUUd7_H6Lui0cdcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53754790833-qu45ckucglpe8k8to62hofb8d23no1q3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.peech">
+
+    <uses-permission android:name="android.permssion.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -8,8 +12,64 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        android:usesCleartextTraffic="true"
+        <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".testRegistration">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestLog">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Other" />
+        <activity android:name=".Entertainement" />
+        <activity android:name=".Health" />
+        <!--<activity android:name="" />
+           android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_tutoriel" />-->
+        <activity android:name=".Account">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgottenPassword">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TutorielActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +77,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".testRegistration"
+            android:process=":remote" />
     </application>
 
 </manifest>
